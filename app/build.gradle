@@ -54,11 +54,13 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:26.0.0')
     // Firebase setup (4): Optioneel - als je gekozen hebt om analytics te gebruiken
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'androidx.wear:wear:1.0.0'
-    implementation 'androidx.annotation:annotation:1.1.0'
     // Firebase setup (5): Andere Firebase dependencies
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    // ! deze niet vergeten...
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
 
-    implementation 'com.google.firebase:firebase-auth:19.3.1'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
