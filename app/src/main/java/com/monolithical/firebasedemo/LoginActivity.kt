@@ -1,11 +1,10 @@
-package com.monolithical
+package com.monolithical.firebasedemo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
-import com.monolithical.firebasedemo.MainActivity
-import com.monolithical.firebasedemo.R
+import com.monolithical.firebasedemo.databinding.ActivityLoginBinding
 
 /**
  * Eerst demo met google login
@@ -16,7 +15,9 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        // set up viewbinding (niet in module gradle vergeten aan te zetten)
+        val binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         // 2
         auth = FirebaseAuth.getInstance()
     }
