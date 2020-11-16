@@ -15,7 +15,9 @@ Bewust niet refactored om de stappen onder elkaar te laten zien op de plek van a
 - FirebaseAuth
   - .getInstance()
   - signInWithCredential()
+  - AuthResult
   - .signOut()
+  - FirebaseUser
 
 ## Voorbeeld met GoogleSignin
 
@@ -34,6 +36,7 @@ Op HomeFragment een loguit-knop die na uitloggen/disconnect van Google naar Logi
 - GoogleAuthProvider
   - .getCredential
 - AuthCredential wordt gebruikt door FirebaseAuth om in te loggen
+
 
 ## TODO
 
